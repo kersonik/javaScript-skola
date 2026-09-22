@@ -12,9 +12,9 @@ const menuItems = ["Linky", "Čáry máry", "Šachovnice"];
 
 function caryMary() {
   stroke(random(255), random(255), random(255));
-  strokeWeight(random(5, 25));
+  strokeWeight(random(10, 25));
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 15; i++) {
     let x1 = random(width);
     let y1 = random(height);
     let x2 = random(width);
@@ -24,7 +24,8 @@ function caryMary() {
 }
 
 function sachovnice() {
-  
+  for (let i = 0; i < width; i += 40)
+  square(i, 0, 40)
 }
 
 function setup() {
